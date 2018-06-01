@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body style="margin: 0;">
+    <script src="https://cdn.rawgit.com/mrdoob/three.js/r93/build/three.min.js"></script>
+    <script src="https://cdn.rawgit.com/mrdoob/three.js/r93/examples/js/controls/TrackballControls.js"></script>
+    <script>
+        const renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+
+        const scene = new THREE.Scene();
+
+        const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight);
+        camera.position.set(0, 0, 10);
+        scene.add(camera);
+
+        const geometry = new THREE.BoxGeometry(1, 1, 1);
+        const material = new THREE.MeshLambertMaterial({ color: 0xff69b4 });
+        const cube = new THREE.Mesh(geometry, material);
+        scene.add(cube);
+
+        const pointLight = new THREE.PointLight();
+        pointLight.position.set(10, 20, 30);
+        scene.add(pointLight);
+
+        const ambientLight = new THREE.AmbientLight();
+        scene.add(ambientLight);
+
+        const controls = new THREE.TrackballControls(camera);
+
+        function render() {
+            controls.update();
+            renderer.render(scene, camera);
+            requestAnimationFrame(render);
+        }
+        render();
+
+        document.body.appendChild(renderer.domElement);
+    </script>
+</body>
+</html>
