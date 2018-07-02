@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button>Share this</button>
+    <script>
+        document.querySelector('button').onclick = () =>
+            navigator.share({
+                title: 'Tolle Webseite',
+                text: 'Das wäre doch was für dich!',
+                url: 'https://liebel.org'
+            })
+                .then(() => alert('successfully shared'))
+                .catch(() => alert('sharing unsuccesful'));
+    </script>
+</body>
+</html>

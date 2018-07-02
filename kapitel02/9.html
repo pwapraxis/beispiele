@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Press me</h1>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pressure/2.1.2/pressure.min.js"></script>
+    <script>
+        Pressure.set('h1', {
+            start: () => document.body.style.backgroundColor = 'green',
+            startDeepPress: () => document.body.style.backgroundColor = 'red',
+            endDeepPress: () => document.body.style.backgroundColor = 'blue',
+            end: () => document.body.style.backgroundColor = 'white',
+        });
+    </script>
+</body>
+</html>

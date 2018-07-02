@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Gamepad Demo</h1>
+    <p id="notice">No gamepad detected yet. Try to press a button.</p>
+    <p>Move the left analog stick to the left or to the right to travel through the color wheel.</p>
+    <script>
+        function update() {
+            const gamepads = navigator.getGamepads();
+            for (let i = 0; i < gamepads.length; i++) {
+                const pad = gamepads[i];
+                if (pad) {
+                    // NOTE: The next line is required for this demo only.
+                    document.getElementById('notice').style.display = 'none';
+                    const color = (pad.axes[0] + 1) * 180;
+                    document.body.style.backgroundColor = `hsl(${color}, 100%, 50%)`;
+                    break;
+                }
+            }
+            requestAnimationFrame(update);
+        }
+        update();
+    </script>
+</body>
+</html>
