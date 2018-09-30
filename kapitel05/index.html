@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dexie/2.0.4/dexie.min.js"></script>
+<script src="db.js"></script>
+<script>
+    navigator.serviceWorker.addEventListener('controllerchange', event => console.log(event));
+    db.open()
+        .then(() => {
+            if ('serviceWorker' in navigator) {
+                return navigator.serviceWorker.register('sw.js');
+            }
+        }).then(registration => console.log(registration))
+        .catch(err => console.error(err));
+
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.addEventListener('message', event => console.log('message', event.data));
+        navigator.serviceWorker.ready.then(registration => registration.active.postMessage('ping'));
+    }
+</script>
+</body>
+</html>
