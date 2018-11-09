@@ -1,0 +1,16 @@
+{
+  "name": "applepay-identity-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Christian Liebel",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "restify": "^6.3.4",
+    "restify-cors-middleware": "^1.1.0"
+  }
+}
