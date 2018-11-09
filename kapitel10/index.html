@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=contain">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Document</title>
+    <style>
+    .safe-area {
+        flex: 1;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+    }
+
+    body {
+        margin-top: env(safe-area-inset-top);
+        margin-bottom: env(safe-area-inset-bottom);
+        margin-left: env(safe-area-inset-left);
+        margin-right: env(safe-area-inset-right);
+        display: flex;
+        justify-content: stretch;
+        align-items: stretch;
+    }
+
+    html {
+        background-color: red;
+    }
+    </style>
+</head>
+<body>
+    <div class="safe-area">(safe area)</div>
+</body>
+</html>
