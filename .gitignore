@@ -1,0 +1,5 @@
+.idea
+.DS_Store
+Thumbs.db
+node_modules
+kapitel13/electron-demo/build/
