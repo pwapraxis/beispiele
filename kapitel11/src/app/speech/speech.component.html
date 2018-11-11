@@ -1,0 +1,4 @@
+<mat-form-field>
+  <input matInput placeholder="Text zum Vorlesen" #textbox>
+</mat-form-field>
+<button mat-button (click)="readAloud(textbox.value)">Vorlesen</button>
