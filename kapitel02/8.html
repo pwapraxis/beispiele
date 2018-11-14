@@ -9,7 +9,7 @@
 <body>
     <script>
         const sensor = new Accelerometer();
-        sensor.onreading = () => document.body.innerText = sensor.y// < 5 ? 'blue' : 'red';
+        sensor.onreading = () => document.body.style.backgroundColor = sensor.y < 5 ? 'blue' : 'red';
         sensor.start();
     </script>
 </body>
