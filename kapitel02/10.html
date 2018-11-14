@@ -7,9 +7,9 @@
     <title>Document</title>
 </head>
 <body style="margin: 0;">
-    <iframe src="" frameborder="0" style="height: 100vh; width: 100vw"></iframe>
+    <iframe src="" frameborder="0" style="width: 100vw; height: 100vh;"></iframe>
     <script>
-        navigator.geolocation.getCurrentPosition(res => document.querySelector('iframe').src = `https://www.openlinkmap.org/small.php?lat=${res.coords.latitude}&lon=${res.coords.longitude}&zoom=13`);
+        navigator.geolocation.getCurrentPosition(location => document.querySelector('iframe').src = `https://www.openlinkmap.org/small.php?lat=${location.coords.latitude}&lon=${location.coords.longitude}&zoom=13`);
     </script>
 </body>
 </html>
