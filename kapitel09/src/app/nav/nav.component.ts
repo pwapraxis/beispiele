@@ -6,7 +6,7 @@ import { map } from 'rxjs/operators';
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
-  styleUrls: ['./nav.component.css']
+  styleUrls: ['./nav.component.css'],
 })
 export class NavComponent {
   installPrompt;
@@ -16,8 +16,7 @@ export class NavComponent {
       map(result => result.matches)
     );
 
-  constructor(private breakpointObserver: BreakpointObserver) {
-  }
+  constructor(private breakpointObserver: BreakpointObserver) {}
 
   @HostListener('window:beforeinstallprompt', ['$event'])
   onBeforeInstallPrompt(event: Event) {
@@ -25,16 +24,13 @@ export class NavComponent {
     return false;
   }
 
+  install() {
+    this.installPrompt.prompt();
+  }
+
   @HostListener('window:appinstalled')
   onAppInstalled() {
     this.installPrompt = null;
   }
 
-  install() {
-    this.installPrompt.prompt();
-  }
-
-  sync() {
-    this.syncService.sync();
-  }
 }
