@@ -1,17 +1,16 @@
 importScripts('https://cdnjs.cloudflare.com/ajax/libs/dexie/2.0.4/dexie.min.js', 'db.js');
 
 self.addEventListener('install', () => {
-    console.log('install');
+    console.log('Installing');
 });
 
 self.addEventListener('activate', event => {
-    console.log('activate');
     event.waitUntil(db.open());
 });
 
 self.addEventListener('fetch', event => {
     console.log('fetch', event.request);
-    if (event.request.url.endsWith('/hallo-welt')) {
+    if (event.request.url.endsWith('/hello-world')) {
         event.respondWith(new Response('Hallo Welt!'));
     }
     if (event.request.url.endsWith('/articles')) {
