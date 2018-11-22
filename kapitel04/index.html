@@ -19,10 +19,6 @@
             installButton.style.display = 'block';
         });
 
-        window.addEventListener('appinstalled', () => {
-            installButton.style.display = 'none';
-        });
-
         installButton.addEventListener('click', async () => {
             await deferredPrompt.prompt();
             const choiceResult = await deferredPrompt.userChoice;
