@@ -5,7 +5,7 @@ Herzlich willkommen beim Demo-Quellcode zum [PWA-Praxisbuch](https://www.rheinwe
 ## Entwicklungen nach Drucklegung
 
 * Microsoft hat angekündigt, bei Microsoft Edge künftig [auf einen Chromium-Unterbau](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) zu setzen. Dieser stellt auch die quelloffene Basis für den Chrome-Webbrowser dar. Für Webentwickler wird damit das Testen vereinfacht, da sich Edge und Chrome nicht mehr unterscheiden. (06.12.2018)
-* Microsoft Edge soll auf seinem neuen Unterbau [auch das Installieren von Progressive Web Apps erlauben](https://www.reddit.com/r/Windows10/comments/a3pt19/microsoft_edge_making_the_web_better_through_more/eb8rhe5/) (als Alterantive zur Distribution über den Store, 06.12.2018).
+* Microsoft Edge soll auf seinem neuen Unterbau [auch das Installieren von Progressive Web Apps erlauben](https://www.reddit.com/r/Windows10/comments/a3pt19/microsoft_edge_making_the_web_better_through_more/eb8rhe5/) (als Alternative zur Distribution über den Store, 06.12.2018).
 * [Gerüchten zufolge](https://www.howtogeek.com/fyi/microsoft-is-working-on-windows-lite-because-it-cant-stop-beating-dead-horses/) plant Microsoft eine neue Windows-Version namens Windows Lite, die ausschließlich Apps für UWP und Progressive Web Apps ausführt (04.12.2018).
 
 ## Errata
