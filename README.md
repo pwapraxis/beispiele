@@ -6,6 +6,7 @@ Herzlich willkommen beim Demo-Quellcode zum [PWA-Praxisbuch](https://www.rheinwe
 
 * Mozilla Firefox erlaubt [die Abfrage zur Zustimmung zu Pushbenachrichtigungen](https://www.heise.de/newsticker/meldung/Firefox-will-nervige-Push-Benachrichtigungen-reduzieren-4358092.html) nur noch nach der ersten Benutzerinteraktion an (wie im Buch empfohlen, 02.04.2019).
 * Google Chrome Canary 75 führt eine _Install_-Schaltfläche [in der Adressleiste ein](https://twitter.com/firt/status/1111277913939283968) (28.03.2019).
+* iOS 12.2 [behebt ein paar PWA-Bugs](https://medium.com/@firt/whats-new-on-ios-12-2-for-progressive-web-apps-75c348f8e945), andere bleiben bestehen (26.03.2019).
 * Die Background Fetch API erlaubt [Hintergrunddownloads über den Service Worker](https://developers.google.com/web/updates/2018/12/background-fetch) (auch dazu kann die App geschlossen werden, 12.02.2019).
 * Service Worker [könnten bald einen deklarativen Router erhalten](https://jakearchibald.com/2019/service-worker-declarative-router/), um das URL-Handling zu vereinfachen (07.01.2019).
 * Project Fugu wartet [mit einigen neuen Webschnittstellen auf](https://www.heise.de/developer/artikel/Google-Projekt-Fugu-Die-Macht-des-Kugelfisches-4255636.html) (20.12.2018).
