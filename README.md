@@ -4,6 +4,8 @@ Herzlich willkommen beim Demo-Quellcode zum [PWA-Praxisbuch](https://www.rheinwe
 
 ## Entwicklungen nach Drucklegung
 
+* Bei der Chrome-Konferenz _BlinkOn_ wurde der Status einiger moderner Webschnittstellen vorgestellt. Die Beiträge sind auf [YouTube verfügbar](https://www.youtube.com/user/blinkontalks/playlists?view=50&sort=dd&shelf_id=2) (23.04.2019).
+* Die Badging API ist nun hinter dem Flag _Experimental Web Platform features_ (`chrome://flags/#enable-experimental-web-platform-features`) [verfügbar](https://twitter.com/tomayac/status/1114131251181555714) (23.04.2019).
 * Mozilla Firefox erlaubt [die Abfrage zur Zustimmung zu Pushbenachrichtigungen](https://www.heise.de/newsticker/meldung/Firefox-will-nervige-Push-Benachrichtigungen-reduzieren-4358092.html) nur noch nach der ersten Benutzerinteraktion an (wie im Buch empfohlen, 02.04.2019).
 * Google Chrome Canary 75 führt eine _Install_-Schaltfläche [in der Adressleiste ein](https://twitter.com/firt/status/1111277913939283968) (28.03.2019).
 * iOS 12.2 [behebt ein paar PWA-Bugs](https://medium.com/@firt/whats-new-on-ios-12-2-for-progressive-web-apps-75c348f8e945), andere bleiben bestehen (26.03.2019).
