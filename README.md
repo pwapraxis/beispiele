@@ -4,6 +4,7 @@ Herzlich willkommen beim Demo-Quellcode zum [PWA-Praxisbuch](https://www.rheinwe
 
 ## Entwicklungen nach Drucklegung
 
+* Google implementiert derzeit [Periodic Background Sync](https://www.chromestatus.com/feature/5689383275462656) zur Umsetzung regelmäßiger Synchronisierungsereignisse, sofern der Client online ist (02.08.2019)
 * Die Tools [PWA2APK](https://appmaker.xyz/pwa-to-apk/) (in Basisversion kostenfrei, kostenpflichtig bei Wahl des Paketnamens) und [PWA Builder](https://www.pwabuilder.com/) erlauben die automatische Generierung von App-Store-Paketen auf Basis von Progressive Web Apps (31.07.2019).
 * Mit Google Chrome 76 wird die Installation von PWAs auf dem Desktop nun direkt in der Adresszeile vorgeschlagen. Damit wird die [Installierbarkeit von PWAs auf dem Desktop offensichtlicher](https://www.heise.de/developer/artikel/Chrome-76-Installation-von-Progressive-Web-Apps-wird-einfacher-4481046.html) (31.07.2019).
 * Bei der Chrome-Konferenz _BlinkOn_ wurde der Status einiger moderner Webschnittstellen vorgestellt. Die Beiträge sind auf [YouTube verfügbar](https://www.youtube.com/user/blinkontalks/playlists?view=50&sort=dd&shelf_id=2) (23.04.2019).
